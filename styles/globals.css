@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/montserrat.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+div {
+  font-family: "Montserrat";
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.custome-scroll::-webkit-scrollbar {
+  width: 10px;
+
+  padding-left: 50px;
+}
+
+.custome-thumb::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 20px;
+}
+
+.custome-hover::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+.mantine-1df1um3 {
+  padding: 20px 10px !important;
+}
+
+.mantine-1qp5qep {
+  padding: 20px 10px !important;
+}
+
+/* input[type="radio"]#Yellow {
+  accent-color: pink;
+}
+
+input[type="radio"]#Green {
+  accent-color: rgb(0, 255, 0);
+}
+
+input[type="radio"]#auto {
+  accent-color: auto;
+}
+
+input[type="radio"]#Red {
+  accent-color: #ff0000;
+} */
+
+.customRadioInput {
+  appearance: none;
+  border: 2px solid #000000; /* Outer border color */
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  outline: none;
+  background-color: #ffffff; /* Inner circle color */
+  position: relative;
+}
+
+.customRadioInput:checked {
+  background-color: #ffffff; /* Inner circle color when checked */
+  border: 2px solid #000000; /* Inner circle border color when checked */
+}
+
+.customRadioInput:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000; /* Inner circle color */
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.customRadioInput::before {
+  background-color: #ffffff; /* Inner circle color when checked */
+}
+
+.css-13cymwt-control {
+  min-height: 48px !important;
+}

@@ -1,0 +1,29 @@
+.contentBox {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.image {
+  width: 30px; /* Set an initial width for the image */
+}
+
+.text {
+  font-size: 16px; /* Set an initial font size for the text */
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .image {
+    width: 24px; /* Reduce the image size for small screens */
+  }
+
+  .contentBox{
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .text {
+    font-size: 14px; /* Reduce the font size for small screens */
+  }
+}
